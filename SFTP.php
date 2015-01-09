@@ -270,7 +270,7 @@ final class SFTP {
 		if(ftp_mkdir($this->_stream, $directory)) {
 			// success
             if($chmod)
-                ftp_mkdir($this->_stream, $chmod, $directory);
+                $this->chmod($chmod, $directory);
 			return true;
 		// fail
 		} else {
@@ -359,9 +359,7 @@ final class SFTP {
     }
 
     public function deltree($path = null){
-        //var_dump($path);
         if($this->isdir($path)){
-          //  var_dump($path);
             $content = $this->ls($path.'/');
             foreach ($content as $file)
                 $this->deltree($path.$file);
