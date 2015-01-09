@@ -27,6 +27,7 @@ $ftp = new SFTP(FTP_HOSTNAME, FTP_USERNAME, FTP_PASSWORD, PORT, TIMEOUT);
 ##Methods
 
 **$ftp->cd( *directory* )**
+
 Changes the current directory to the specified one (aka 'navigate' to it)
 
 **$ftp->chmod( *permission*, *remote file* )**
