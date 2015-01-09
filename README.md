@@ -19,6 +19,11 @@ else {
     
 ```
 
+Note that you can specify a different port and timeout. Defaults are `21` and `90`.
+```php
+$ftp = new SFTP(FTP_HOSTNAME, FTP_USERNAME, FTP_PASSWORD, PORT, TIMEOUT);
+```
+
 ####Methods
 
 **$ftp->cd( *directory* )**
