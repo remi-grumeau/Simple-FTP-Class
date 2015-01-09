@@ -24,7 +24,7 @@ Note that you can specify a different port and timeout. Defaults are `21` and `9
 $ftp = new SFTP(FTP_HOSTNAME, FTP_USERNAME, FTP_PASSWORD, PORT, TIMEOUT);
 ```
 
-####Methods
+##Methods
 
 **$ftp->cd( *directory* )**
 Changes the current directory to the specified one (aka 'navigate' to it)
@@ -75,11 +75,11 @@ Remove all files inside the given remote directory before it deletes the directo
 **$ftp->fileexists( *remote file* )**
 Returns `true` or `false` is the remote file exists.
 
-###Contribution:  PR accepted!
+##Contribution:  PR accepted!
 Any contribution is always welcome, so feel free to fork and send a pull request !
 
-###Thanks
+##Thanks
 Of course, thanks [Shay Anderson](http://www.shayanderson.com/php/simple-ftp-class-for-php.htm) for this little yet useful class.
 
-###License
+##License
 As the initial code, this code is release under the [GPL License](https://gnu.org/licenses/gpl.html), without any warranty.
